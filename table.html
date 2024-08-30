@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Assignment</title>
+
+    <style>
+        nav {
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 5px;
+            margin: 0;
+            background-color: grey;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            position: relative;
+
+        }
+
+        nav ul li a {
+            display: block;
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+
+        }
+
+        nav ul li a:hover {
+            color: purple;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        #currentpage {
+            color: purple;
+        }
+
+        h1{
+            background-color:lightsteelblue;
+            text-align: center;
+            padding: 10px;
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100%;
+            ;
+        }
+         
+        #courses{
+            overflow-x: auto;
+        }
+
+        td{
+            padding: 10px;
+            background-color: coral;
+        }
+
+        th{
+            height: 50px;
+            background-color: purple;
+            padding: 10px;
+            color: white;
+        }
+
+        td:first-child{ 
+            font-weight: bold;
+            background-color: blueviolet;
+        }
+
+        footer{
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="./Index.html">About Me</a> </li>
+                <li> <a href="./form.html">Altschool application form</a></li>
+                <li> <a href="./table.html" id="currentpage">Altschool Tracks & Courses</a></li>
+                <li> <a href="./media.html">Personal Media</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>  <h1>AltSchool Africa Schools and Courses</h1>  </div>
+
+        <div id="courses">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>SCHOOL</th>
+                        <th colspan="3">COURSES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>School of Engineering</td>
+                        <td>Front-end Engineering</td>
+                        <td>Back-end Engineering</td>
+                        <td>Cloud Engineering</td>
+                    </tr>
+                    <tr>
+                        <td>School of Data</td>
+                        <td>Data Analytics</td>
+                        <td>Data Engineering</td>
+                        <td>Data Science</td>
+                    </tr>
+                    <tr>
+                        <td>School of Product</td>
+                        <td>Product Design</td>
+                        <td>Product Marketing</td>
+                        <td>Product Management</td>
+                    </tr>
+                    <tr>
+                        <td>School of Business</td>
+                        <td>High-Impact Selling: From Prospecting to Closing</td>
+                        <td colspan="2">Digital Marketing</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>School of creative Economy</td>
+                        <td>Navigating the Music Business in Africa: Afrobeats case study</td>
+                        <td colspan="2">Content Mastery for African Creators</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <a href="https://altschoolafrica.com">View Full Details Here</a>
+    </main>
+
+
+    <footer>
+        <b> Kemdirim Njoku &copy 2024 AltSchool Africa. All rights reserved. </b>
+    </footer>
+</body>
+</html>

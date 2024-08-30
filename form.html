@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AltSchool Application form</title>
+
+    <style>
+        nav {
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 5px;
+            margin: 0;
+            background-color: grey;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            position: relative;
+
+        }
+
+        nav ul li a {
+            display: block;
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+
+        }
+
+        nav ul li a:hover {
+            color: purple;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        #currentpage {
+            color: purple;
+        }
+
+        #preinfo {
+            text-align: right;
+            margin: 5px;
+        }
+
+        .img-container{
+            width: 45%;
+            object-fit: contain;
+            height: 100%;
+            padding: 0px 30px 0px 30px;
+        }
+
+        h1{
+            font-weight: 900;
+            font-size: xx-large;
+            text-align: center;
+        }
+
+        img {
+            vertical-align: middle;
+            border-style: none;
+            width: 100%;
+            
+        
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .grid-join{
+            grid-column: 1/-1;
+        }
+
+        input{
+            border: 1px solid rgb(240, 240, 240);
+            border-radius: 3px;
+            padding: 3px;
+            background-color: rgb(233, 227, 227);
+            height: 40px;
+            
+        }
+
+        #submitbtn {
+            width: 100%;
+            padding: 20px;
+            border: 0px;
+            border-radius: 5px;
+            background-color: rgb(111, 101, 204);
+            color: white;
+        }
+
+        #submitbtn:hover{
+            opacity: 0.9;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        form{
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li> <a href="./Index.html">About Me</a> </li>
+                <li> <a href="./form.html" id="currentpage">Altschool application form</a></li>
+                <li> <a href="./table.html">Altschool Tracks & Courses</a></li>
+                <li> <a href="./media.html">Personal Media</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="preinfo">
+            <b> Already an Altschooler? <a href="">Sign in!</a></b>
+        </div>
+
+        <section>
+            <div class="img-container">
+                <img src="./assets/https___res.cloudinary.com_talentql-inc_image_upload_v1703728439_student-portal_academic_zzg4hi.png"
+                alt="Education image for application form page">
+
+                <h1>Learn highly sought <br>
+                    after skills without <br>
+                    hassle.</h1>
+            </div>
+
+
+
+            <form action="submit">
+                <h2 id="signup">Signup</h2>
+                <p>Take the next steps to apply at Altschool Africa</p>
+
+                <div class="form-grid">
+
+                    <label for="firstrname">First Name</label>
+                    <label for="lastname">Last Name</label>
+
+                    <input type="text" id="firstname" placeholder="Enter first name">
+                    <input type="text" id="lastname" placeholder="Enter last name">
+
+                    <label for="gender">Gender</label>
+                    <label for="dob">Date of Birth</label>
+
+                    <input list="gender" placeholder="Select gender">
+
+                    <datalist id="gender">
+                        <option value="Male">
+                        <option value="Female">
+                        <option value="Other">
+                    </datalist>
+
+                    <input type="date" id="dob">
+
+                    <label for="email">Email Address</label>
+                    <label for="phone">Phone Number</label>
+
+                    <input type="email" id="email" placeholder="Enter email address">
+                    <input type="tel" id="phone" placeholder="08154387000">
+
+                    <label for="country">Country</label>
+                    <label for="state">State/City of Residence</label>
+
+                    <input list="country" placeholder="Select your country">
+
+                    <datalist id="country">
+                        <option value="Ghana">
+                        <option value="Nigeria">
+                        <option value="Niger">
+                        <option value="South Africa">
+                    </datalist>
+
+                    <input type="text" id="state" placeholder="Enter your state of residence">
+
+                    <label class="grid-join" for="info">How did you hear about us?</label>
+
+                    <input class="grid-join" list="info" placeholder="Select channel">
+
+                    <datalist id="info">
+                        <option value="Twitter">
+                        <option value="Facebook">
+                        <option value="LinkedIn">
+                        <option value="Youtube">
+                        <option value="Friend">
+                        <option value="Whatsapp">
+                        <option value="Instagram">
+                        <option value="Bill Board">
+                        <option value="Sales officer">
+                        <option value="Other">
+                    </datalist>
+
+                    <label for="password">Password</label>
+                    <label for="password2">Confirm Password</label>
+
+                    <input type="password" id="password" placeholder="Enter password">
+                    <input type="password" id="password2" placeholder="Enter password again">
+                </div>
+
+                    <p>By clicking continue, I agree to <a href="">Terms of Use</a> and acknowledge that I have read the
+                        <a href="">Privacy Policy</a>.
+                    </p>
+
+                    <button type="submit" value="Submit" id="submitbtn">Submit</button>
+            </form>
+        </section>
+    </main>
+    <br>
+    <br>
+    <footer>
+        <b> &copy 2024 AltSchool Africa. All rights reserved. </b>
+    </footer>
+</body>
+
+</html>

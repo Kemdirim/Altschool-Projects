@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Assignment</title>
+
+    <style>
+        nav {
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 5px;
+            margin: 0;
+            background-color: grey;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            position: relative;
+
+        }
+
+        nav ul li a {
+            display: block;
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+
+        }
+
+        nav ul li a:hover {
+            color: purple;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        #currentpage {
+            color: purple;
+        }
+
+        h1{
+            background-color: rgb(233, 239, 250);
+            border-radius: 2px;
+        }
+
+        #content{
+           background-color: blueviolet;
+           color: #fff;
+           padding: 5px;
+           margin: 20px 0px 20px 0px;
+           border-radius: 3px;
+        }
+         
+        video{
+            height: 400px;
+            width: 400px;
+        }
+
+        footer{
+            margin-top: 50px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="./Index.html">About Me</a> </li>
+                <li> <a href="./form.html">Altschool application form</a></li>
+                <li> <a href="./table.html">Altschool Tracks & Courses</a></li>
+                <li> <a href="./media.html" id="currentpage">Personal Media</a></li>
+            </ul>
+        </nav>
+
+        <h1>Media Elements About Me</h1>
+    </header>
+
+    <main>
+
+        <div id="content">
+            <h2>My Picture Content</h2>
+        </div>
+
+        <picture> 
+            <source srcset="./assets/me300px.jpg" media="(max-width:500px)">
+            <source srcset="./assets/me500px.jpg" media="(max-width:800px)">
+            <source srcset="./assets/me800px.jpg" media="(max-width:1000px)">
+
+            <img src="./assets/me800px.jpg" alt="My Photograph">
+        </picture>
+
+        <div id="content">
+            <h2>My Audio Content</h2>
+        </div>
+
+        <audio src="./assets/altschool audio assignment .m4a" controls></audio>
+
+        <div id="content">
+            <h2>My Video Content</h2>
+        </div>
+
+        <video src="./assets/altschool video.mp4" controls></video>
+    </main>
+
+    <footer>
+        <b> Kemdirim Njoku &copy 2024 AltSchool Africa. All rights reserved. </b>
+    </footer>
+</body>
+</html>
